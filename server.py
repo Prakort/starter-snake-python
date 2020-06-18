@@ -33,9 +33,9 @@ class Battlesnake(object):
             "apiversion": "1",
             "author": "Prakort",  # TODO: Your Battlesnake Username
             
-            "color": "#3E338F",
-            "head": "beluga",
-            "tail": "curled"
+            "color": "#E80978",
+            "head": "evil",
+            "tail": "bolt"
           
         }
 
@@ -167,7 +167,7 @@ class Battlesnake(object):
         # move = random.choice(possible_moves)
 
         print(f"MOVE: {next_move}")
-        return {"move": next_move}
+        return {"move": next_move, "shout": "Going " + next_move + ". Time to hunt cookie, COOKIE HUNTER 🚀🚀🚀🚀🚀🚀"}
 
     @cherrypy.expose
     @cherrypy.tools.json_in()
